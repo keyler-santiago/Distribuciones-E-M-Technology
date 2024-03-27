@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuciones E&M Technology</title>
+    <link rel="shortcut icon" href="/assets/favicon/logo.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: rgb(0,195,236);
+            background: linear-gradient(90deg, rgba(0,195,236,1) 21%, rgba(0,206,255,1) 51%, rgba(0,255,252,1) 95%);
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #774dffaf;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: transparent;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 style="text-align: center; color: rgb(69, 69, 255);">
+        Distribuciones E&M Technology
+    </h1>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="mision-vision.html">MisionVision</a></li>
+                <li><a class="active" href="contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div class="contenedor-formulario">
+        <form>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribí aquí tu nombre" required>
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribí aquí tu apellido" required>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="@gmail.com" required>
+            <label for="pais">País: </label>
+            <select name="pais" id="pais" class="pais">
+                <optgroup label="Latino America">
+                    <option value="Colombia">Colombia</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Mexico">Mexico</option>
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="España">España</option>
+                    <option value="Alemania">Alemania</option>
+                    <option value="Países bajos">Países bajos</option>
+                    <option value="Francia">Francia</option>
+                    <option value="Grecia">Grecia</option>
+                    <option value="Suiza">Suiza</option>
+                </optgroup>
+            </select> <br> <br>
+            <label for="area">Escribí vuestro comentario</label>
+            <textarea name="area" id="comentario" placeholder="Escribí vuestro comentario" required></textarea>  <br> <br>
+            <label for="motivo">Motivo de contacto: </label>
+            <input type="radio" id="motivo" name="motivo"><i>Soy fan</i>
+            <input type="radio" id="motivo" name="motivo"><i>Saber precios</i>
+            <input type="radio" id="motivo" name="motivo"><i>Ubicación de la tienda</i>
+            <input type="radio" id="motivo" name="motivo"><i>Conocer horarios de atención</i>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            Derechos reservados &copy; 2024 <b> Santi Code </b>
+        </p>
+    </footer>
+
+
+</body>
+</html>
